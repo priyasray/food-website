@@ -1,47 +1,28 @@
-🍔 Practice Food Website
+# Practice Food Website
 
-A simple practice food website built using HTML, CSS, JavaScript, and JSON.
-This project was created to improve my front-end development and design skills.
+This is a simple practice food website, created for learning and improving web development skills.
+The project is built using HTML, CSS, JavaScript, and JSON.
+The website features a clean, responsive layout and basic interactivity for practice purposes.
 
-🚀 Features
+## Features
+1. Clean and responsive UI design
+2. Simple layout for food items
+3. Basic JavaScript interactions
+4. JSON used for data handling
+5. Beginner-friendly and easy-to-understand code
 
-Clean and responsive layout
+## Technologies Used
+1.HTML
+2.CSS
+3.JavaScript
+4.JSON
 
-HTML for structure
+## How to Run
+Simply open the index.html file in any web browser.
+You can also view it on a local server (example): http://127.0.0.1:5500/index.html
 
-CSS for styling
+## Acknowledgements
+This project was created for learning and practice purposes.
 
-JavaScript for interactions
-
-JSON for data handling
-
-Beginner-friendly codebase
-
-📂 Tech Stack
-
-HTML
-
-CSS
-
-JavaScript
-
-JSON
-
-🔗 Demo (Local Preview)
-
-View the site locally using:
-http://127.0.0.1:5500/index.html
-
-(This link works only on your computer.)
-
-📁 How to Use
-
-Download or clone the repository
-
-Open index.html in your browser
-
-Explore the code and project structure
-
-🎯 Purpose
-
-This project was made only for learning and practice, helping improve basic web development skills.
+## Author
+Priyas Ray
