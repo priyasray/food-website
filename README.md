@@ -12,10 +12,10 @@ The website features a clean, responsive layout and basic interactivity for prac
 5. Beginner-friendly and easy-to-understand code
 
 ## Technologies Used
-1.HTML
-2.CSS
-3.JavaScript
-4.JSON
+1. HTML
+2. CSS
+3. JavaScript
+4. JSON
 
 ## How to Run
 Simply open the index.html file in any web browser.
