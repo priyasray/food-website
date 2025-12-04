@@ -16,66 +16,47 @@
 <body>
     <!-- HEADER PART -->
     <header>
-        <nav class="navbar flex between wrapper">
+        <nav class="navbar flex between wrapper" role="navigation" aria-label="Main navigation">
             <a href="#" class="logo">Foodie.</a>
             <!-- Desktop Menu -->
             <ul class="navlist flex gap-3">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
             </ul>
 
             <div class="desktop-action flex gap-2">
-                <a href="#" class="cart-icon">
-                    <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+                <a href="#" class="cart-icon" aria-label="Cart">
+                    <i class="fa-solid fa-cart-flatbed-suitcase" aria-hidden="true"></i>
                     <span class="cart-value">0</span>
                 </a>
                 <a href="#" class="btn">
                     Sign in
                     &nbsp;
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
                 </a>
-                <a href="#" class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
+                <a href="#" class="hamburger" aria-label="Open menu">
+                    <i class="fa-solid fa-bars" aria-hidden="true"></i>
                 </a>
             </div>
 
             <!-- Mobile Menu -->
             <ul class="mobile-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
                 <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Menu</a>
-                </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-                <li>
-                    <a href="#">Contacts</a>
-                </li>
-                <li> <a href="#" class="btn">
+                    <a href="#" class="btn">
                         Sign in
                         &nbsp;
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    </a></li>
+                        <i class="fa-solid fa-arrow-right-from-bracket" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
-
         </nav>
     </header>
 
@@ -88,15 +69,15 @@
                     <p class="para">We will fill your tummy with delicious<br> food with fast delivery.</p>
                     <div class="flex gap-2">
                         <a href="#" class="btn">Order now</a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Google Plus"><i class="fa-brands fa-google-plus-g"></i></a>
                     </div>
                 </div>
 
                 <div class="image-container">
-                    <img src="Images/delivery-boy.png">
+                    <img src="Images/delivery-boy.png" alt="Delivery person holding food">
                 </div>
             </div>
         </section>
@@ -111,7 +92,7 @@
                 <div class="flex text-center mt-4 gap-4">
                     <div class="service-card">
                         <div class="images-container">
-                            <img src="Images/easy-to-order.png">
+                            <img src="Images/easy-to-order.png" alt="Easy to order icon">
                         </div>
                         <h3>Easy to Order</h3>
                         <p>You only need a few steps in ordering food.</p>
@@ -119,18 +100,18 @@
 
                     <div class="service-card">
                         <div class="images-container">
-                            <img src="Images/fast-delivery.png">
+                            <img src="Images/fast-delivery.png" alt="Fast delivery icon">
                         </div>
                         <h3>Fast Delivery</h3>
-                        <p>Delivery that is always ontime even faster.</p>
+                        <p>Delivery that is always on time even faster.</p>
                     </div>
 
                     <div class="service-card">
                         <div class="images-container">
-                            <img src="Images/best-quality.png">
+                            <img src="Images/best-quality.png" alt="Best quality icon">
                         </div>
                         <h3>Best Quality</h3>
-                        <p>Not only fast for us in quality is also number one.</p>
+                        <p>Not only fast; for us quality is also number one.</p>
                     </div>
                 </div>
             </div>
@@ -144,38 +125,14 @@
                 </div>
 
                 <div class="card-list text-center flex mt-4 gap-2">
-                    <!-- <div class="order-card">
-                        <div class="card-image">
-                            <img src="Images/burger.png">
-                        </div>
-                        <h4>Double Beef Burger</h4>
-                        <h4 class="price">$200</h4>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div> -->
+                    <!-- menu cards will be injected here -->
                 </div>
 
                 <!-- CART TAB -->
-                <div class="cart-tab">
+                <div class="cart-tab" aria-live="polite">
                     <h3>Your Cart</h3>
                     <div class="cart-list">
-                        <!-- <div class="item">
-                            <div class="item-image">
-                                <img src="Images/burger.png">
-                            </div>
-                            <div class="">
-                                <h4>Double Beef Burger</h4>
-                                <h4 class="item-total">$200</h4>
-                            </div>
-                            <div class="flex">
-                                <a href="#" class="quantity-btn">
-                                    <i class="fa-solid fa-minus"></i>
-                                </a>
-                                <h4 class="quantity-value">1</h4>
-                                <a href="#" class="quantity-btn">
-                                    <i class="fa-solid fa-plus"></i>
-                                </a>
-                            </div>
-                        </div> -->
+                        <!-- cart items will be injected here -->
                     </div>
 
                     <div class="total-container">
@@ -185,32 +142,32 @@
 
                     <div class="btn-container flex gap-2">
                         <a href="#" class="btn close-btn">Close</a>
-                        <a href="#" class=btn>Check out</a>
+                        <a href="#" class="btn">Check out</a>
                     </div>
                 </div>
+            </div> <!-- <-- missing wrapper close was added here -->
         </section>
 
         <section>
             <div class="wrapper p-top flex gap-3">
                 <div class="image-container">
-                    <img src="Images/delivery-boy-with-phone.png" alt="">
+                    <img src="Images/delivery-boy-with-phone.png" alt="Delivery person with phone">
                 </div>
 
                 <div class="review-container">
                     <h5>Our reviews</h5>
                     <h2>What they say?</h2>
                     <!-- Swiper -->
-
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper mt-4">
                             <div class="swiper-slide">
                                 <div class="flex gap-2">
                                     <div class="profile">
-                                        <img src="Images/profile1.jpeg">
+                                        <img src="Images/profile1.jpeg" alt="Profile 1">
                                     </div>
                                     <div>
                                         <h4>Guy Hawkins</h4>
-                                        <div class="mt-half">
+                                        <div class="mt-half" aria-hidden="true">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -220,18 +177,17 @@
                                     </div>
                                 </div>
                                 <p class="para">Foodie is the best. besides the many delicious meal, the service is
-                                    also very
-                                    good, especially very fast delivery. I highly recommend Foodie to you.</p>
+                                    also very good, especially very fast delivery. I highly recommend Foodie to you.</p>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="flex gap-2">
                                     <div class="profile">
-                                        <img src="Images/profile2.jpeg">
+                                        <img src="Images/profile2.jpeg" alt="Profile 2">
                                     </div>
                                     <div>
                                         <h4>Sophiya Anderson</h4>
-                                        <div class="mt-half">
+                                        <div class="mt-half" aria-hidden="true">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -241,18 +197,17 @@
                                     </div>
                                 </div>
                                 <p class="para">Fresh ingredients, creative menu, and warm service make this spot a
-                                    hidden gem.
-                                    Perfect for casual dinners or special nights out. Truly a foodie's paradise!</p>
+                                    hidden gem. Perfect for casual dinners or special nights out. Truly a foodie's paradise!</p>
                             </div>
 
                             <div class="swiper-slide">
                                 <div class="flex gap-2">
                                     <div class="profile">
-                                        <img src="Images/profile3.jpeg">
+                                        <img src="Images/profile3.jpeg" alt="Profile 3">
                                     </div>
                                     <div>
                                         <h4>Olivia Smith</h4>
-                                        <div class="mt-half">
+                                        <div class="mt-half" aria-hidden="true">
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
                                             <i class="fa-solid fa-star"></i>
@@ -262,17 +217,17 @@
                                     </div>
                                 </div>
                                 <p class="para">Delicious dishes, cozy ambiance, and exceptional service. A
-                                    must-visit for food
-                                    lovers seeking bold flavors and unforgettable dining experiences. highly
+                                    must-visit for food lovers seeking bold flavors and unforgettable dining experiences. Highly
                                     recommend, every bite delights!</p>
                             </div>
                         </div>
+
                         <div class="flex between">
-                            <a href="#" class="arrow" id="prev">
-                                <i class="fa-solid fa-arrow-left"></i>
+                            <a href="#" class="arrow" id="prev" aria-label="Previous slide">
+                                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                             </a>
-                            <a href="#" class="arrow" id="next">
-                                <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#" class="arrow" id="next" aria-label="Next slide">
+                                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -285,7 +240,7 @@
             <div class="wrapper p-top">
                 <div class="app-container flex between">
                     <div class="image-container">
-                        <img src="Images/mobile-app.png">
+                        <img src="Images/mobile-app.png" alt="Mobile app preview">
                     </div>
 
                     <div class="content">
@@ -304,12 +259,11 @@
                     <h5>Our Subscribe</h5>
                     <h2>Subscribe To Our Newsletter</h2>
                     <p class="para m-auto">We recommend you to subscribe our newsletter, drop your email below to get
-                        daily
-                        update about us.</p>
+                        daily update about us.</p>
 
-                    <label class="input-container flex mt-4">
+                    <label class="input-container flex mt-4" for="email">
                         <input type="email" name="email" id="email" placeholder="Enter your email address"
-                            autocomplete="off">
+                            autocomplete="off" aria-label="Email address">
                         <a href="#" class="btn">Subscribe</a>
                     </label>
                 </div>
@@ -317,7 +271,7 @@
         </section>
     </main>
 
-    <!-- SECTIONS PART -->
+    <!-- FOOTER PART -->
     <footer>
         <div class="footer-container">
             <div class="flex wrapper gap-4">
@@ -325,71 +279,47 @@
                     <a href="#" class="logo">Foodie</a>
                     <p class="mt-one-half">We will fill your tummy with delicious<br> food with fast delivery.</p>
                     <div class="flex gap-2 mt-one-half">
-                        <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" aria-label="Google Plus"><i class="fa-brands fa-google-plus-g"></i></a>
                     </div>
                 </div>
+
                 <ul class="footer-wrapper">
-                    <li>
-                        <h4>Our Menu</h4>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Special</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Popular</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Category</a>
-                    </li>
+                    <li><h4>Our Menu</h4></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Special</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Popular</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Category</a></li>
                 </ul>
 
                 <ul class="footer-wrapper">
-                    <li>
-                        <h4>Company</h4>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Why Foodie</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Partner With Us</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">About US</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">FAQ</a>
-                    </li>
+                    <li><h4>Company</h4></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Why Foodie</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Partner With Us</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">About US</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">FAQ</a></li>
                 </ul>
 
                 <ul class="footer-wrapper">
-                    <li>
-                        <h4>Support</h4>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Account</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Support Center</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Feedback</a>
-                    </li>
-                    <li class="mt-one-half">
-                        <a href="#" class="footer-link">Contacts</a>
-                    </li>
+                    <li><h4>Support</h4></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Account</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Support Center</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Feedback</a></li>
+                    <li class="mt-one-half"><a href="#" class="footer-link">Contacts</a></li>
                 </ul>
             </div>
         </div>
-        <!-- <div className="max-w-7xl mx-auto border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
+
+        <!-- Copyright / small footer -->
+        <div class="max-w-7xl mx-auto border-t border-gray-200 pt-8 text-center text-gray-400 text-sm">
             <p>© 2025 Foodie. All rights reserved.</p>
-        </div> -->
+        </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
-    
+
 </body>
 
 </html>
